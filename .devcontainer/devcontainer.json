@@ -1,0 +1,22 @@
+{
+    "name": "FormalMeTTa-dev",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "SCALA_VERSION": "3.2.1"
+        },
+        "context": ".."
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "EditorConfig.EditorConfig",
+                "ms-python.python",
+                "eamodio.gitlens",
+                "vscode-icons-team.vscode-icons",
+                "charliermarsh.ruff"
+            ]
+        }
+    },
+    "postCreateCommand": "ls"
+}
